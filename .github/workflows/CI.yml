@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      run: ./buildDockerImage.sh -v 11.2.0.2 -x
+      working-directory: ./OracleDatabase/SingleInstance/dockerfiles
