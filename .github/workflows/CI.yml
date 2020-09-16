@@ -11,5 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build
-      run: ./buildDockerImage.sh -v 11.2.0.2 -x
+      run: ./buildDockerImage.sh -v 18.4.0 -x
       working-directory: ./OracleDatabase/SingleInstance/dockerfiles
