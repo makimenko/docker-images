@@ -23,5 +23,5 @@ jobs:
       if: ${{ github.ref == 'refs/heads/master' }}
       working-directory: ./OracleDatabase/SingleInstance/dockerfiles
       run: |
-        docker tag oracle/database:18.4.0-xe docker.pkg.github.com/makimenko/docker-images/oracle/database:latest
-        docker push docker.pkg.github.com/makimenko/docker-images/oracle/database:latest
+        docker tag oracle/database:18.4.0-xe docker.pkg.github.com/makimenko/docker-images/db:18.4.0-xe
+        docker push docker.pkg.github.com/makimenko/docker-images/db:18.4.0-xe
